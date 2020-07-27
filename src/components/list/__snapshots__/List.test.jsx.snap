@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders List 1`] = `
+<ul>
+  <li
+    key="1"
+  >
+    <h3>
+      Aang
+    </h3>
+    <p />
+    <Link
+      to="/characters/1"
+    >
+      Details
+    </Link>
+  </li>
+  <li
+    key="2"
+  >
+    <h3>
+      Zuko
+    </h3>
+    <p />
+    <Link
+      to="/characters/2"
+    >
+      Details
+    </Link>
+  </li>
+</ul>
+`;
