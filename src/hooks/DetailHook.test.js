@@ -36,6 +36,15 @@ describe('detail hook test', () => {
     });
   });
 
+  it('has photoUrl state', () => {
+    return act(() => {
+      const { result, waitFor } = renderHook(() => useDetailHook());
+      return waitFor(() => {
+        expect(result.current.photoUrl).not.toBeUndefined();
+      });
+    });
+  });
+
   it('has affiliation state', () => {
     return act(() => {
       const { result, waitFor } = renderHook(() => useDetailHook());
@@ -62,5 +71,4 @@ describe('detail hook test', () => {
       });
     });
   });
-
 });

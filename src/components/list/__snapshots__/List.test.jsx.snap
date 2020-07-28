@@ -8,6 +8,7 @@ exports[`List component renders List 1`] = `
     <h3>
       Aang
     </h3>
+    <img />
     <p />
     <Link
       to="/characters/1"
@@ -21,6 +22,7 @@ exports[`List component renders List 1`] = `
     <h3>
       Zuko
     </h3>
+    <img />
     <p />
     <Link
       to="/characters/2"
