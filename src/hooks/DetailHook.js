@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Detail from '../../components/detail/Detail';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getCharacter } from '../../services/api';
+import { getCharacter } from '../services/api';
 
-const DetailHook = () => {
+export const useDetailHook = () => {
   const { id } = useParams();
   const [name, setName] = useState('');
   const [affiliation, setAffiliation] = useState('');
@@ -20,10 +19,12 @@ const DetailHook = () => {
       });
   }, []);
 
-  return (
-    <Detail name={name} affiliation={affiliation} allies={allies} enemies={enemies} />
-  );
+  return {
+    name,
+    affiliation,
+    allies,
+    enemies
+  };
 
 };
 
-export default DetailHook;
