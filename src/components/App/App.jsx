@@ -4,16 +4,17 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import DetailDisplay from '../../containers/detail/DetailDisplay';
-import ListDisplay from '../../containers/list/ListDisplay';
+import Header from '../header/Header';
+import DetailPage from '../../containers/detail/DetailPage';
+import ListPage from '../../containers/list/ListPage';
 
 export default function App() {
   return (
     <Router>
-      <h1>Avatar Characters</h1>
+      <Header />
       <Switch>
-        <Route exact path='/' component={ListDisplay}/>
-        <Route path='/characters/:id' component={DetailDisplay}/>
+        <Route exact path='/' component={ListPage}/>
+        <Route path='/characters/:id' component={DetailPage}/>
       </Switch>
     </Router>
   );

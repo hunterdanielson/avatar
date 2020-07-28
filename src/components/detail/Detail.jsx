@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Detail = ({ name, affiliation, allies, enemies }) => (
+const Detail = ({ name, photoUrl, affiliation, allies, enemies }) => (
   <div>
     <h1>{name}</h1>
+    <img src={photoUrl} />
     <h2>{affiliation}</h2>
     <h3>Allies</h3>
     <ul>
@@ -19,6 +20,7 @@ const Detail = ({ name, affiliation, allies, enemies }) => (
 
 Detail.propTypes = {
   name: PropTypes.string.isRequired,
+  photoUrl: PropTypes.string.isRequired,
   affiliation: PropTypes.string.isRequired,
   allies: PropTypes.arrayOf(PropTypes.string),
   enemies: PropTypes.arrayOf(PropTypes.string)

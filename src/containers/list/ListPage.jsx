@@ -2,7 +2,7 @@ import React from 'react';
 import List from '../../components/list/List';
 import { useListHook } from '../../hooks/ListHook';
 
-const ListDisplay = () => {
+const ListPage = () => {
   const { list, loading, pageNum, handlePage } = useListHook();
 
   if(loading) return <h1>Loading</h1>;
@@ -16,4 +16,4 @@ const ListDisplay = () => {
   );
 };
 
-export default ListDisplay;
+export default ListPage;
