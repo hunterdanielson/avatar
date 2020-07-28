@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail component renders Detail 1`] = `
+<div>
+  <h1>
+    Aang
+  </h1>
+  <img
+    src="pic.png"
+  />
+  <h2>
+    avatar
+  </h2>
+  <h3>
+    Allies
+  </h3>
+  <ul>
+    <li
+      key="katara"
+    >
+      katara
+    </li>
+  </ul>
+  <h3>
+    Enemies
+  </h3>
+  <ul>
+    <li
+      key="azula"
+    >
+      azula
+    </li>
+    <li
+      key="ozai"
+    >
+      ozai
+    </li>
+  </ul>
+</div>
+`;
