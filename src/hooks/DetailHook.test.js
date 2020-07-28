@@ -36,4 +36,31 @@ describe('detail hook test', () => {
     });
   });
 
+  it('has affiliation state', () => {
+    return act(() => {
+      const { result, waitFor } = renderHook(() => useDetailHook());
+      return waitFor(() => {
+        expect(result.current.affiliation).not.toBeUndefined();
+      });
+    });
+  });
+
+  it('has allies state', () => {
+    return act(() => {
+      const { result, waitFor } = renderHook(() => useDetailHook());
+      return waitFor(() => {
+        expect(result.current.allies).not.toBeUndefined();
+      });
+    });
+  });
+
+  it('has enemies state', () => {
+    return act(() => {
+      const { result, waitFor } = renderHook(() => useDetailHook());
+      return waitFor(() => {
+        expect(result.current.enemies).not.toBeUndefined();
+      });
+    });
+  });
+
 });

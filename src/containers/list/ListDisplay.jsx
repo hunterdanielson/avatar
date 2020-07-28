@@ -3,10 +3,16 @@ import List from '../../components/list/List';
 import { useListHook } from '../../hooks/ListHook';
 
 const ListDisplay = () => {
-  const { list } = useListHook();
+  const { list, loading, pageNum, handlePage } = useListHook();
+
+  if(loading) return <h1>Loading</h1>;
 
   return (
-    <List list={list} />
+    <>
+      {pageNum > 1 && <button value='prev' onClick={handlePage}>Previous</button>} 
+      {pageNum < 25 && <button value='next' onClick={handlePage}>Next</button>} 
+      <List list={list} />
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
-export const getAllCharacters = () => {
-  return fetch('https://last-airbender-api.herokuapp.com/api/v1/characters')
+export const getAllCharacters = (pageNum) => {
+  return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters?page=${pageNum}`)
     .then(res => res.json());
 };
 
