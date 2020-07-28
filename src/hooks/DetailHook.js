@@ -25,6 +25,5 @@ export const useDetailHook = () => {
     allies,
     enemies
   };
-
 };
 
