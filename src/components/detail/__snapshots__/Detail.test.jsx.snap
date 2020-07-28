@@ -8,6 +8,9 @@ exports[`Detail component renders Detail 1`] = `
   <h2>
     avatar
   </h2>
+  <h3>
+    Allies
+  </h3>
   <ul>
     <li
       key="katara"
@@ -15,6 +18,9 @@ exports[`Detail component renders Detail 1`] = `
       katara
     </li>
   </ul>
+  <h3>
+    Enemies
+  </h3>
   <ul>
     <li
       key="azula"
