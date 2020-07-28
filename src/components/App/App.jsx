@@ -5,15 +5,15 @@ import {
   Route
 } from 'react-router-dom';
 import ListHook from '../../containers/list/ListHook';
-// import Detail from '../detail/Detail';
+import DetailHook from '../../containers/detail/DetailHook';
 
 export default function App() {
   return (
     <Router>
       <h1>Avatar Characters</h1>
       <Switch>
-        <Route path='/' component={ListHook}/>
-        {/* <Route exact path='/characters/:id' component={Detail}/> */}
+        <Route exact path='/' component={ListHook}/>
+        <Route path='/characters/:id' component={DetailHook}/>
       </Switch>
     </Router>
   );
